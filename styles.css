@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn1 {
+  animation-name: btn1;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255, 1)
+  );
+}
+
+@keyframes btn1 {
+  0% {
+    left: -50%;
+    top: 0px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
+
+.btn2 {
+  animation-name: btn2;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255, 1)
+  );
+}
+
+@keyframes btn2 {
+  0% {
+    right: 0px;
+    top: -30px;
+  }
+  100% {
+    right: 0px;
+    top: 100%;
+  }
+}
+
+.btn3 {
+  animation-name: btn3;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255, 1)
+  );
+}
+
+@keyframes btn3 {
+  0% {
+    right: -50%;
+    bottom: 0px;
+  }
+  100% {
+    right: 100%;
+    bottom: 0px;
+  }
+}
+
+.btn4 {
+  animation-name: btn4;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgb(255, 255, 255, 1)
+  );
+}
+
+@keyframes btn4 {
+  0% {
+    left: 0px;
+    bottom: -30px;
+  }
+  100% {
+    left: 0px;
+    bottom: 100%;
+  }
+}
+/* OPENSANS (worksans) bold 700*/
+@font-face {
+  font-family: opensans;
+  src: url("./fonts/Work_Sans/static/WorkSans-Bold.ttf");
+}
+
+.opensans {
+  font-family: opensans;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* WorkSans Semi-bold 600 */
+@font-face {
+  font-family: semibold;
+  src: url("./fonts/Work_Sans/static/WorkSans-SemiBold.ttf");
+}
+
+.semibold {
+  font-family: semibold;
+}
+
+/* WorkSans medium 500*/
+@font-face {
+  font-family: sansmedium;
+  src: url("./fonts/Work_Sans/static/WorkSans-Medium.ttf");
+}
+
+.sansmedium {
+  font-family: sansmedium;
+}
+
+/* WorkSans regular 400*/
+@font-face {
+  font-family: worksansregular;
+  src: url("./fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+
+.worksansregular {
+  font-family: worksansregular;
+}
+
+/* Lufga Black-900 */
+@font-face {
+  font-family: lufga;
+  src: url("./fonts/lufga/LufgaBlack.ttf");
+}
+
+.lufga {
+  font-family: lufga;
+}
+
+/* Lufga Bold-700 */
+@font-face {
+  font-family: lufgabold;
+  src: url("./fonts/lufga/LufgaBold.ttf");
+}
+
+.lufgabold {
+  font-family: lufgabold;
+}
+/* lufga extra-bold 800 */
+@font-face {
+  font-family: lufgaextrabold;
+  src: url("./fonts/lufga/LufgaExtraBold.ttf");
+}
+
+.lufgaextrabold {
+  font-family: lufgaextrabold;
+}
+
+#navbar {
+  transition: top 0.3s;
+}
+
+#first {
+  display: block;
+}
+
+/* .animation1 {
+  animation-name: animation1;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  position: relative;
+  animation-iteration-count: 3;
+}
+
+@keyframes animation1 {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 100%;
+  }
+} */
+
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #250fef;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cursor-grab1 {
+  cursor: default; /* Set cursor to default */
+  -webkit-user-select: none; /* Disable text selection */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Disable tap highlight */
+  -webkit-touch-callout: none; /* Disable callout */
+  -webkit-scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+.overflow-x-scroll1 {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
